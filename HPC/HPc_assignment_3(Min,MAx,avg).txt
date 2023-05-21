@@ -1,7 +1,12 @@
-//Cedrick Andrade
-//COBA006
+ /*
+Name: Alwis Shaji
+Roll no: COBA001
 
+Implement Min, Max, Sum and Average operations using Parallel 
+Reduction.
+*/
 #include <iostream>
+//#include <vector>
 #include <omp.h>
 #include <climits>
 using namespace std;
@@ -42,19 +47,22 @@ void average_reduction(int arr[], int n) {
   for (int i = 0; i < n; i++) {
 	sum += arr[i];
   }
-  cout << "Average: " << (double)sum / (n-1) << endl;
+  cout << "Average: " << (double)sum / (n) << endl;
 }
 
 int main() {
     int *arr,n;
-    cout<<"\n Enter total no of elements=> ";
+    cout<<"\n enter total no of elements=>";
     cin>>n;
     arr=new int[n];
-    cout<<"\n Enter elements=>";
     for(int i=0;i<n;i++)
     {
+     cout<<"\n enter elements=>";
    	 cin>>arr[i];
     }
+
+//   int arr[] = {5, 2, 9, 1, 7, 6, 8, 3, 4};
+//   int n = size(arr);
 
   min_reduction(arr, n);
   max_reduction(arr, n);

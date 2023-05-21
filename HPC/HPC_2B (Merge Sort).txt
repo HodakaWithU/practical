@@ -1,6 +1,10 @@
-//Cedrick Andrade
-//COBA006
+/*
+Name: Alwis Shaji
+Roll no: COBA001
 
+Write a program to implement Parallel Merge Sort. Use existing algorithms
+and measure the performance of sequential and parallel algorithms.
+*/
 #include <iostream>
 #include <vector>
 #include <omp.h>

@@ -1,3 +1,11 @@
+1) !nvcc --version
+2) !pip install git+https://github.com/andreinechaev/nvcc4jupyter.git
+3) %load_ext nvcc_plugin
+
+
+
+
+
 // CUDA Matrix Multiplication
 %%cu
 #include <stdio.h>
